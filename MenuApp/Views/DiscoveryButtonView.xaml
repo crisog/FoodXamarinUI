@@ -1,0 +1,24 @@
+﻿<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MenuApp.Views.DiscoveryButtonView"
+             x:Name ="discoveryButtonView">
+    <ContentView.Content>
+        <StackLayout Margin ="8">
+
+            <Image Source="{Binding Image}"  HeightRequest="80" Margin="0,10,0,0" />
+
+            <Label FontSize="18"
+                FontAttributes="Bold"
+                TextColor="Black"
+                HorizontalOptions="CenterAndExpand"
+                Text="{Binding Title}"/>
+
+            <Label FontSize="13"
+                HorizontalOptions="Center"
+                Text="{Binding Subtitle}"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
