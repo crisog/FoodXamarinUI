@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MenuApp.Views.MainPage"
+             xmlns:local="clr-namespace:MenuApp.Views"
+            BarBackgroundColor="White"
+            BarTextColor="Gray">
+
+    <TabbedPage.Children>
+        <NavigationPage Title="Discovery" IconImageSource="https://img.icons8.com/small/16/000000/marker.png" BarTextColor="Black" BarBackgroundColor="White" HeightRequest="70">
+            <x:Arguments>
+                <local:DiscoveryPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Home" IconImageSource="https://img.icons8.com/material-outlined/24/000000/home--v2.png" BarTextColor="Black" BarBackgroundColor="White" HeightRequest="70"/>
+
+        <NavigationPage Title="Bookmark" IconImageSource="https://img.icons8.com/material-rounded/24/000000/bookmark.png" BarTextColor="Black"  BarBackgroundColor="White" HeightRequest="70"/>
+
+        <NavigationPage Title="Top Foodie" IconImageSource="https://img.icons8.com/ios-glyphs/30/000000/trophy.png" BarTextColor="Black" BarBackgroundColor="White" HeightRequest="70"/>
+
+        <NavigationPage Title="Profile" IconImageSource="https://img.icons8.com/small/16/000000/user-male-circle.png" BarTextColor="Black" BarBackgroundColor="White" HeightRequest="70"/>
+    </TabbedPage.Children>
+</TabbedPage>
