@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MenuApp.Views"
+    mc:Ignorable="d"
+    x:Class="MenuApp.Views.DiscoveryPage"
+    Title="Discovery"
+    >
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <local:DiscoveryButtonView 
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    BindingContext="{Binding MenuOptionBeer}"
+                    BackgroundColor="{Binding MenuOptionBeer.BackgroundColor}">
+                    <local:DiscoveryButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:DiscoveryButtonView.GestureRecognizers>
+                </local:DiscoveryButtonView>
+
+                <local:DiscoveryButtonView 
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                     BindingContext="{Binding MenuOptionDining}"
+                    BackgroundColor="{Binding MenuOptionDining.BackgroundColor}">
+                    <local:DiscoveryButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:DiscoveryButtonView.GestureRecognizers>
+                </local:DiscoveryButtonView>
+
+                <local:DiscoveryButtonView 
+                    Grid.Row="1" 
+                    Grid.Column="0" 
+                     BindingContext="{Binding MenuOptionCafe}"
+                    BackgroundColor="{Binding MenuOptionCafe.BackgroundColor}">
+                    <local:DiscoveryButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:DiscoveryButtonView.GestureRecognizers>
+                </local:DiscoveryButtonView>
+
+                <local:DiscoveryButtonView 
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    BackgroundColor="{Binding MenuOptionNearby.BackgroundColor}" 
+                    BindingContext="{Binding MenuOptionNearby}">
+                    <local:DiscoveryButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:DiscoveryButtonView.GestureRecognizers>
+                </local:DiscoveryButtonView>
+
+                <local:DiscoveryButtonView 
+                    Grid.Row="2" 
+                    Grid.Column="0" 
+                    BackgroundColor="{Binding MenuOptionFastFood.BackgroundColor}" 
+                    BindingContext="{Binding MenuOptionFastFood}">
+                    <local:DiscoveryButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:DiscoveryButtonView.GestureRecognizers>
+                </local:DiscoveryButtonView>
+
+                <local:DiscoveryButtonView 
+                    Grid.Row="2" 
+                    Grid.Column="1" 
+                    BackgroundColor="{Binding MenuOptionFeaturedFood.BackgroundColor}" 
+                    BindingContext="{Binding MenuOptionFeaturedFood}">
+                    <local:DiscoveryButtonView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stack_Clicked"/>
+                    </local:DiscoveryButtonView.GestureRecognizers>
+                </local:DiscoveryButtonView>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
