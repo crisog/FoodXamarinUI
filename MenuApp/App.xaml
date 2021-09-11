@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MenuApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+                <Setter Property="TextColor" Value="Navy"/>
+                <Setter Property="BorderRadius" Value="80"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="Margin" Value="20"/>
+                <Setter Property="Grid.ColumnSpan" Value="4"/>
+            </Style>
+
+            <Style x:Key="firstLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="35"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Grid.Row" Value="0"/>
+                <Setter Property="Grid.Column" Value="0"/>
+                <Setter Property="Grid.ColumnSpan" Value="2"/>
+            </Style>
+
+            <Style x:Key="secondLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
+                <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+                <Setter Property="Grid.Row" Value="0"/>
+                <Setter Property="Grid.Column" Value="2"/>
+                <Setter Property="Grid.ColumnSpan" Value="2"/>
+            </Style>
+
+            <Style x:Key="loginImage" TargetType="ImageButton">
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+                <Setter Property="Grid.Row" Value="8"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
